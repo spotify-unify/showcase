@@ -103,19 +103,19 @@ section.orange p {
 	color: #FFF;
 }
 
+/* Image thinger, was 3 pics first so called a triple, whatevs */
+
 section.triple {
 	height: 30vh;
 	padding: 0;
 }
 section.triple .tripleimg {
 	height: 30vh;
-	width: 33%;
+	width: 25%;
 	display: inline-block;
 	background-size: cover;
 }
-
 section.triple .tripleimg:first-child {
-	width: 34%;
 	background-image: url(/resources/photo_1.jpg);
 }
 section.triple .tripleimg:nth-child(2) {
@@ -123,6 +123,9 @@ section.triple .tripleimg:nth-child(2) {
 }
 section.triple .tripleimg:nth-child(3) {
 	background-image: url(/resources/photo_3.jpg);
+}
+section.triple .tripleimg:nth-child(4) {
+	background-image: url(/resources/photo_4.jpg);
 }
 
 section.app {
