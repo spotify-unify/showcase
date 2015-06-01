@@ -1,15 +1,189 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,700,900);
+
+
+/* Global */
 body {
 	text-align: center;
+	font-family: 'Roboto', Helvetica Neue, Helvetica, sans-serif;
 }
 
-pre {
-	background: #233;
-	color: #FFF;
+h1 {
+	font-size: 4em;
+	font-weight: 900;
 
-	height: 300px;
-	width: 400px;
+	color: #BBB;
+	text-transform: uppercase;
+	letter-spacing: -4px;
 
 	margin: 30px auto;
+}
+h2 {
+	font-weight: 300;
+	font-style: italic;
+	color: #999;
+	font-size: 2em;
+}
+p {
+	width: 60vw;
+	margin: 0 auto;
 
-	border-radius: 1px; 
+	line-height: 140%;
+	font-weight: 300;
+	font-size: 1.25em;
+
+	color: #444;
+}
+p:not(:first-of-type) {
+	margin-top: 20px;
+}
+a {
+	color: #FF9600;
+}
+
+/* Header */
+.blurground {
+	height: 75vh;
+	width: 104vw;
+
+	position: absolute;
+	top: -2vh;
+	left: -2vw;
+
+	background-image: url(/resources/group_photo.jpg);
+	background-size: cover;
+	background-position: 50% 0;
+
+	-webkit-filter: blur(8px);
+	        filter: blur(8px);
+}
+header {
+	height: 75vh;
+	width: 100%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+header img {
+	height: 35vh;
+	margin-top: 20vh;
+	position: relative;
+}
+
+/* Footer */
+footer {
+	background-color: #FF9600;
+
+	padding: 50px 0;
+}
+footer p {
+	font-weight: 100;
+	/*font-style: italic;*/
+	text-transform: uppercase;
+	color: #FFF;
+
+	font-size: 1em;
+
+	margin: 0 auto 15px;
+}
+
+/* The rest */
+
+section {
+	padding: 50px 0;
+}
+section:first-of-type {
+	margin-top: 75vh;
+}
+section.orange {
+	background-color: #FF9600;
+}
+section.orange p {
+	color: #FFF;
+}
+
+section.triple {
+	height: 30vh;
+	padding: 0;
+}
+section.triple .tripleimg {
+	height: 30vh;
+	width: 33%;
+	display: inline-block;
+	background-size: cover;
+}
+
+section.triple .tripleimg:first-child {
+	width: 34%;
+	background-image: url(/resources/photo_1.jpg);
+}
+section.triple .tripleimg:nth-child(2) {
+	background-image: url(/resources/photo_2.jpg);
+}
+section.triple .tripleimg:nth-child(3) {
+	background-image: url(/resources/photo_3.jpg);
+}
+
+section.app {
+	padding: 0 0 50px;
+}
+
+/* Jamspot */
+#androidjamspot .doubleimg {
+	height: 27.7vw;
+	display: inline-block;
+	background-size: cover;
+	background-position: 50% 50%;
+
+	width: 41%;
+	background-image: url(/resources/teams/android.jpg);
+}
+#androidjamspot .doubleimg:first-child {
+	width: 59%;
+	background-image: url(/resources/apps/jamspot.jpg);
+}
+
+/* Venew */
+#netscapevenew .doubleimg {
+	height: 21vw;
+	display: inline-block;
+	background-size: cover;
+	background-position: 50% 50%;
+
+	width: 39%;
+	background-image: url(/resources/apps/venew.png);
+}
+#netscapevenew .doubleimg:first-child {
+	width: 61%;
+	background-image: url(/resources/teams/netscape.jpg);
+}
+
+/* Triptunes */
+#notietriptunes .doubleimg {
+	height: 25.3vw;
+	display: inline-block;
+	background-size: cover;
+	background-position: 50% 50%;
+
+	width: 54.5%;
+	background-image: url(/resources/teams/notie.jpg);
+}
+#notietriptunes .doubleimg:first-child {
+	width: 45.5%;
+	background-image: url(/resources/apps/triptunes.png);
+}
+
+/* Pilgrim */
+#iospilgrim .doubleimg {
+	height: 40.2vw;
+	display: inline-block;
+	background-size: cover;
+	background-position: 50% 50%;
+
+	width: 22.4%;
+	background-image: url(/resources/apps/pilgrim.png);	
+}
+#iospilgrim .doubleimg:first-child {
+	width: 77.6%;
+	background-image: url(/resources/teams/ios.jpg);
 }
