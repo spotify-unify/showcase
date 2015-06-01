@@ -5,6 +5,7 @@
 body {
 	text-align: center;
 	font-family: 'Roboto', Helvetica Neue, Helvetica, sans-serif;
+	overflow-x: hidden;
 }
 
 h1 {
