@@ -39,6 +39,15 @@ p:not(:first-of-type) {
 }
 a {
 	color: #FF9600;
+	transition: all 0.15s;
+	text-decoration: none;
+	border-bottom: 2px solid #FF9600;
+	padding: 0 2px;
+}
+a:hover {
+	color: #FFF;
+	background: #FF9600;
+	transition: all 0.15s;
 }
 
 /* Header */
